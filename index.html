@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,12 +66,40 @@
       background: white;
       padding: 25px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
     .service-card h3 {
       margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item p {
+      padding: 12px;
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.95rem;
     }
 
     .about {
@@ -104,7 +133,7 @@
 
 <body>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <header>
     <h1>VinylDesignsLA</h1>
     <p>
@@ -114,7 +143,7 @@
     <a href="#contact" class="cta-button">Get a Custom Order</a>
   </header>
 
-  <!-- SERVICES SECTION -->
+  <!-- SERVICES -->
   <section>
     <h2>Our Custom Creations</h2>
     <div class="services">
@@ -125,50 +154,71 @@
 
       <div class="service-card">
         <h3>Champagne Flutes</h3>
-        <p>Elegant custom flutes for weddings, anniversaries, and quinceañeras.</p>
+        <p>Elegant custom flutes for weddings and quinceañeras.</p>
       </div>
 
       <div class="service-card">
         <h3>Custom T-Shirts</h3>
-        <p>Personalized shirts for events, businesses, and everyday wear.</p>
+        <p>Personalized shirts for events and everyday wear.</p>
       </div>
 
       <div class="service-card">
         <h3>Vinyl Decals</h3>
-        <p>High-quality decals for cars, walls, cups, laptops, and more.</p>
+        <p>High-quality decals for cars, cups, and more.</p>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- GALLERY -->
+  <section>
+    <h2>Our Work</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/beer-mug.jpg" alt="Personalized Beer Mug">
+        <p>Personalized Beer Mugs</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/champagne-flutes.jpg" alt="Champagne Flutes">
+        <p>Wedding & Quinceañera Flutes</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/custom-shirt.jpg" alt="Custom T-Shirt">
+        <p>Custom T-Shirts</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/vinyl-decals.jpg" alt="Vinyl Decals">
+        <p>Vinyl Decals</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
   <section>
     <h2>About VinylDesignsLA</h2>
     <div class="about">
       <p>
-        VinylDesignsLA is a small crafting business specializing in custom vinyl designs
-        for gifts, events, and personal projects. Every item is made to order with attention
-        to detail and creativity to bring your ideas to life.
+        VinylDesignsLA specializes in custom vinyl crafts for gifts, events,
+        and personal projects — all made to order with care and creativity.
       </p>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <h2>Contact & Orders</h2>
     <p>
-      Ready to create something custom?  
-      Reach out on Instagram or email us to get started.
-    </p>
-    <p>
-      📧 Email: <a href="mailto:vinyldesignsla@email.com">vinyldesignsla@email.com</a><br />
-      📸 Instagram: <a href="#">@VinylDesignsLA</a>
+      📧 <a href="mailto:vinyldesignsla@email.com">vinyldesignsla@email.com</a><br />
+      📸 <a href="#">@VinylDesignsLA</a>
     </p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    © 2025 VinylDesignsLA | Custom Crafts & Vinyl Designs
+    © 2025 VinylDesignsLA
   </footer>
 
 </body>
+
 </html>
