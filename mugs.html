@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beer Mugs | VinylDesignsLA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Personalized Beer Mugs</h1>
+        <p>Custom mugs for gifts, events, and celebrations</p>
+    </header>
+
+    <section>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/beer-mug.jpg" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/beer-mug2.jpg" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/beer-mug3.jpg" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+    </section>
+
+    <a href="index.html">← Back to Home</a>
+
+    <!-- Lightbox reused -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById("lightbox-img").src = src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
